@@ -1,0 +1,3 @@
+[submodule "op2ext"]
+	path = op2ext
+	url = https://github.com/OutpostUniverse/op2ext.git
