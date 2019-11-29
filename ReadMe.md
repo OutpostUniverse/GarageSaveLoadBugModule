@@ -44,7 +44,7 @@ Outpost2.exe /loadmod GarageSaveLoadBugModule
 
 # Reproducing the Bug
 
-To reproduce the bug, load a level with a garage that contains units, such as GarageSaveLoadBugLevel, and save twice.
+To reproduce the bug, load a level with a garage that contains units, such as GarageSaveLoadBugLevel, and save twice. Select the garage, and view the storage bays. At this point the game should crash.
 
 # Additional Links
 
