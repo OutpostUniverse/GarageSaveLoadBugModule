@@ -17,7 +17,6 @@
 #include "OP2Memory.h"
 #include "Log.h"
 #include "Log/LoggerMessageBox.h"
-#include "StringConversion.h"
 
 
 void* AlignedAlloc(std::size_t allocSize);
@@ -49,7 +48,6 @@ __cdecl void* AlignedAlloc(std::size_t allocSize) {
 
 	auto result = reinterpret_cast<std::uintptr_t>(allocFunction(allocSize + 120));
 	if (result != 0) {
-		LogError("Address: " + AddrToHexString(result) + "  Alignment: " + AddrToHexString(result % 120) + "  Offset: " + AddrToHexString(120 - (result % 120)) + "  Result: " + AddrToHexString(result + (120-(result % 120))));
 		result += (120 - (result % 120));
 	}
 	return reinterpret_cast<void*>(result);
