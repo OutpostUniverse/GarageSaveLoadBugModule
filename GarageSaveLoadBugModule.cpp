@@ -9,7 +9,7 @@
 // Outpost2.exe /loadmod GarageSaveLoadBugModule
 
 // Compile on Linux with:
-// mingw -o GarageSaveLoadBugModule.dll -shared *.cpp
+// make
 
 
 #define EXPORT extern "C" __declspec(dllexport)
