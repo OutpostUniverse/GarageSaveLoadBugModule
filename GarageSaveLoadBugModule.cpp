@@ -28,7 +28,7 @@ EXPORT void mod_init() {
 }
 
 
-__cdecl void* AlignedAlloc(std::size_t allocSize) {
+void* __cdecl AlignedAlloc(std::size_t allocSize) {
 	constexpr std::uintptr_t OriginalAllocAddress = 0x004C21F0;
 	auto allocFunction = reinterpret_cast<decltype(&AlignedAlloc)>(OriginalAllocAddress);
 
